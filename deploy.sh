@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define variables
-DOCKER_IMAGE="varun4546/final"
+DOCKER_IMAGE="varun4546/final0"
 DOCKER_TAG="latest"
 CONTAINER_NAME="final"
 
