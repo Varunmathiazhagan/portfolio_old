@@ -1,6 +1,6 @@
 
 # Define variables
-DOCKER_IMAGE="varun4546/final"
+DOCKER_IMAGE="varun4546/final0"
 DOCKER_TAG="latest"
 
 echo "Building Docker image..."
