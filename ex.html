@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Kavin Pradheep S T</h1>
+        <p>Portfolio</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello and welcome! For those interested in learning more about me,
+                     here's a little about myself. I currently reside in the vibrant 
+                     city of Erode. With over a year of experience in web design, 
+                     I am well-versed in the latest technologies and trends in the field. 
+                     Feel free to explore to learn more about my work and passions!.</p>
+            </div>
+            <div class="about-image">
+                <img src="myimage2.png" alt="Your Name">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <img src="html.png" alt="HTML">
+            <img src="css.png" alt="CSS">
+            <img src="javascript.png" alt="JavaScript">
+            <img src="python.png" alt="Python">
+            <img src="nodejs.png" alt="nodejs">
+            <img src="mongodb.png" alt="MongoDB">
+            <img src="uiux.png" alt="uiux">
+            <img src="powerbi.jpeg" alt="Power BI">
+            <!-- Add more skill images as needed -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <a href="https://github.com/kavinpradheep/Tic-Tac-Toe-Game-.git" class="visit-site-button" target="_blank">Visit Site</a>
+                <h3>Tic-Tac-Toe-Game</h3>
+                <p>A browser-based Tic Tac Toe game using HTML, CSS, and JavaScript. 
+                    Two players alternate turns marking "X" or "O" on a 3x3 grid. 
+                    JavaScript handles the game logic, checking for wins or draws. 
+                    The interface is responsive and visually appealing, providing a 
+                    simple yet engaging gaming experience for all users.</p>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/kavinpradheep/Certificate-Generator.git" class="visit-site-button" target="_blank">Visit Site</a>
+                <h3>Certificate-Generator</h3>
+                <p>
+                    A ReactJS-based certificate generator that allows users to input 
+                    details like name, course, and date to create custom certificates. 
+                    The project dynamically renders the input data onto a certificate 
+                    template and provides an option to download the generated certificate 
+                    as a PDF, making it a useful tool for educators and event organizers.</p>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/kavinpradheep/Youtube-clone-project.git" class="visit-site-button" target="_blank">Visit Site</a>
+                <h3>Youtube-Frontend-Clone</h3>
+                <p>
+                    A YouTube frontend clone using HTML and CSS replicates the layout and 
+                    design of YouTube's homepage. It features a responsive interface with 
+                    video thumbnails, search bar, navigation menu, and user profiles. 
+                    This project showcases skills in creating interactive and visually 
+                    appealing web pages with static content and modern web design practices.</p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="your-resume.pdf" download>Download My Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:kavinpradheep8@example.com">kavinpradheep8@example.com</a></p>
+        <p>Phone: 6369960824</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kavin Pradheep S T. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+#about .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .about-text {
+    flex: 4;
+    margin-right: 300px;
+}
+
+#about .about-image img {
+    width: 200px;
+    border-radius: 200%;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+    justify-content: left; /* Center the skill icons */
+}
+
+.skills-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #e4e4e4;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the project cards */
+    max-width: 1200px; /* Optional: Set a max-width to limit the container width */
+    margin: 0 auto; /* Center the container */
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 20px);
+    position: relative;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.project-card h3 {
+    margin-top: 10px;
+}
+
+.project-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.visit-site-button {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}

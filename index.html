@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <nav>
+            <h2 class="logo">Varun M<span>'s Portfolio</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </nav>
+        <div class="content">
+            <h4>Hello, I am</h4>
+            <h1>Varun <span>.</span> 
+            <h3>A Passionate Web Developer</h3>
+            <div class="newsletter">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                    <input type="submit" name="submit" value="Let's Connect">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="main">
+            <img src="about.jpg" alt="Varun's Photo">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Web Developer <span>& Designer</span></h5>
+                <p>Hello and welcome! For those interested in learning more about me,
+                    here's a little about myself. I currently reside in the vibrant 
+                    city of Erode. With over a year of experience in web design, 
+                    I am well-versed in the latest technologies and trends in the field. 
+                    Feel free to explore to learn more about my work and passions!</p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-container">
+            <h2>My Services</h2>
+            <div class="services-grid">
+                <div class="service-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and modern websites using the latest technologies.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user-friendly and aesthetically pleasing interfaces.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>SEO Optimization</h3>
+                    <p>Improving your website's visibility on search engines to drive more traffic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon html-icon"></div>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon css-icon"></div>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon js-icon"></div>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon react-icon"></div>
+                    <p>React</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon node-icon"></div>
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon mo-icon"></div>
+                    <p>Mongo db</p>
+        </div>
+    </section>
+    
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <a href="https://github.com/Varunmathiazhagan/Web-Technology/commit/4a928a27a189b157970a7d7204b5b9495790c9af" class="visit-site-button" target="_blank">Visit Site</a>
+                <h3>Event and Photo Management</h3>
+                <p>
+                    A web-based application designed for managing events and organizing photos efficiently. 
+                    The site allows users to create events, upload and categorize photos, and share them with others. 
+                    It features a user-friendly interface, real-time event updates, and cloud storage integration, 
+                    making it an ideal tool for both personal and professional event management.
+                </p>
+            </div>
+            <div class="project-card">
+                <a href="https://github.com/Varunmathiazhagan/Flutter-Project.git" class="visit-site-button" target="_blank">Visit Site</a>
+                <h3>Age Calculator</h3>
+                <p>
+                    A Flutter application that calculates the exact age of a person based on the input birth date. 
+                    The app provides a simple and intuitive interface, displaying the age in years, months, and days. 
+                    It's a handy tool for quickly determining age and can be used for various purposes such as 
+                    form filling, event planning, and more.
+                </p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="varun.pdf" download>Download My Resume</a>
+    </section>
+
+    
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Contact Me</h2>
+        <p>Varun</p>
+        <p>Follow me on social media or send me an email:</p>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/varun"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:varun@example.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/varun"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/varun"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p class="end">© Varun. All rights reserved.</p>
+    </footer>
+</body>
+</html>

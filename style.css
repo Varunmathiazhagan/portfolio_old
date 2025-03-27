@@ -1,0 +1,490 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+nav .btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero .content h4 {
+    font-size: 24px;
+}
+
+.hero .content h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero .content h1 span {
+    color: #f39c12;
+}
+
+.hero .content h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero .content .newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .content .newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    color: #333;
+}
+/* Projects Section */
+#projects {
+    background: #fff;
+    padding: 80px 20px;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.visit-site-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #f39c12;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.visit-site-button:hover {
+    background: #e67e22;
+}
+
+/* Resume Section */
+#resume {
+    background: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#resume h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#resume a {
+    display: inline-block;
+    background: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#resume a:hover {
+    background: #e67e22;
+}
+
+
+.hero .content .newsletter input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .content .newsletter input[type="submit"]:hover {
+    background-color: #e67e22;
+}
+
+.hero .content a {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.hero .content a:hover {
+    color: #f39c12;
+}
+
+/* About Me Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.about .main {
+    display: flex;
+    align-items: center;
+}
+
+.about img {
+    width: 300px;
+    border-radius: 50%;
+    margin-right: 50px;
+    border: 5px solid #f39c12; /* Adding border for better visibility */
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about-text h5 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-text h5 span {
+    color: #f39c12;
+}
+
+.about-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.about-text .btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.about-text .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Services Section */
+.services-container {
+    text-align: center;
+}
+
+.services-container h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.service-box i {
+    font-size: 50px;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.service-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-box p {
+    font-size: 16px;
+}
+
+.service-box:hover {
+    transform: scale(1.1);
+}
+
+/* Skills Section */
+.skills-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.skills-container h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.skill-icon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+}
+
+/* Individual Skill Icons */
+.html-icon {
+    background-image: url('html.jpg'); /* Ensure correct path */
+}
+
+.css-icon {
+    background-image: url('css.jpg'); /* Ensure correct path */
+}
+
+.js-icon {
+    background-image: url('js.jpg'); /* Ensure correct path */
+}
+
+.react-icon {
+    background-image: url('ui.jpg'); /* Ensure correct path */
+}
+
+.node-icon {
+    background-image: url('node.jpg'); /* Ensure correct path */
+}
+.mo-icon{
+    background-image: url('db.jpg');   
+}
+
+/* Contact Section */
+.contact-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-container input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-container input[type="submit"]:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer .social {
+    margin-bottom: 20px;
+}
+
+footer .social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+footer .end {   
+    margin-top: 20px;
+    font-size: 14px;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+/* Style for the hero section name in black */
+.hero h1 {
+    color: black; /* Set the color of your name to black */
+}
+
+.hero h1 span {
+    color: black; /* Set the period after your name to black */
+}
+
+/* Style for the about section text in black */
+.about-text h2,
+.about-text h5,
+.about-text p {
+    color: black; /* Set the color of "About Me" section text to black */
+}
+.hero h4 {
+    color: black; /* Set the color of your name to black */
+}
+.hero h3 {
+    color: black; /* Set the color of your name to black */
+}
