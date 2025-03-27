@@ -1,11 +1,8 @@
-# Use an official Nginx image as the base image
+# Use the official Nginx image
 FROM nginx:alpine
 
-# Copy built React files into the container
-COPY build /usr/share/nginx/html
+# Copy HTML files to the Nginx web server directory
+COPY . /usr/share/nginx/html
 
-# Expose the port Nginx runs on
+# Expose port 80
 EXPOSE 80
-
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
