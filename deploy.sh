@@ -1,13 +1,15 @@
 #!/bin/bash
 
-# Set Docker image name, tag, and container name
-IMAGE_NAME="varun4546/final"
-TAG="latest"
-CONTAINER_NAME="react-app"
+# Define variables
+DOCKER_IMAGE="varun4546/final"
+DOCKER_TAG="latest"
+CONTAINER_NAME="html-site"
 
-# Stop and remove any existing container with the same name
+echo "Stopping and removing any existing container..."
 docker stop $CONTAINER_NAME || true
 docker rm $CONTAINER_NAME || true
 
-# Run the new Docker container
-docker run -d -p 3002:80 --name $CONTAINER_NAME $IMAGE_NAME:$TAG
+echo "Running new Docker container..."
+docker run -d -p 8080:80 --name $CONTAINER_NAME $DOCKER_IMAGE:$DOCKER_TAG
+
+echo "Deployment successful! Access your site at http://localhost:8080"
