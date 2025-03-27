@@ -3,7 +3,7 @@
 # Define variables
 DOCKER_IMAGE="varun4546/final"
 DOCKER_TAG="latest"
-CONTAINER_NAME="html-site"
+CONTAINER_NAME="final"
 
 echo "Stopping and removing any existing container..."
 docker stop $CONTAINER_NAME || true
